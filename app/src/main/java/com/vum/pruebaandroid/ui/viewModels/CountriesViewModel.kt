@@ -52,7 +52,6 @@ class CountriesViewModel: ViewModel() {
                 )
             )
         }
-
         return countriesList
     }
 }
