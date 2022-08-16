@@ -1,5 +1,7 @@
 package com.vum.pruebaandroid.core
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -8,6 +10,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
+import androidx.core.content.ContextCompat
 import com.vum.pruebaandroid.ui.CountryScreen
 import com.vum.pruebaandroid.ui.theme.PruebaAndroidTheme
 import com.vum.pruebaandroid.ui.viewModels.CountriesViewModel
@@ -32,5 +35,11 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+
     }
 }
